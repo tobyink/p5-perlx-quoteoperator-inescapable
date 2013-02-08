@@ -4,7 +4,6 @@ use 5.010001;
 use strict;
 use warnings;
 no warnings qw( void once uninitialized );
-no thanks;
 
 BEGIN {
 	$PerlX::QuoteOperator::Inescapable::AUTHORITY = 'cpan:TOBYINK';
