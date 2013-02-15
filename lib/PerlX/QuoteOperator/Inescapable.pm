@@ -76,7 +76,7 @@ sub _parser
 sub _ender
 {
 	my ($self, $str) = @_;
-	return {
+	{
 		'('    => ')',
 		'{'    => '}',
 		'['    => ']',
