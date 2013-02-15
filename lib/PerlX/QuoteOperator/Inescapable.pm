@@ -94,6 +94,8 @@ sub _quote
 __FILE__
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
 PerlX::QuoteOperator::Inescapable - a quote-like operator with no string escapes
@@ -140,7 +142,7 @@ appear on the same line of source code.
 
 =head1 BUGS
 
-The hash symbol (#) can not be used as a quote delimiter. Sad face.
+The hash symbol (#) can not be used as a quote delimiter. ☹
 
 Please report any bugs to
 L<http://rt.cpan.org/Dist/Display.html?Queue=PerlX-QuoteOperator-Inescapable>.
