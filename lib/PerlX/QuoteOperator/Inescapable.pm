@@ -42,7 +42,7 @@ sub import
 			as      => $declarator,
 			code    => $callback,
 		};
-	}	
+	}
 }
 
 sub unimport
