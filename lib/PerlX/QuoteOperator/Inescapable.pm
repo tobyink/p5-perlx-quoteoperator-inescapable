@@ -120,10 +120,6 @@ pairs of brackets:
 
 	Q(Hello (Earth) World);   # no!
 
-The current implementation is limited to single-line literals. The
-quote-like operator, starting delimiter and ending delimiter must all
-appear on the same line of source code.
-
 By default, a single quote-like operator is defined, C<< Q >>. You
 can define alternative ones:
 
@@ -134,9 +130,17 @@ can define alternative ones:
 		D => sub ($) { Path::Class::Dir->new(@_) },
 	;
 	
-	my $fonts = D(\\Server1\Marketing\Fonts);
+	my $fonts = D!\\Server1\Marketing\Fonts!;
+
+=head1 CAVEATS
+
+The current implementation is limited to single-line literals. The
+quote-like operator, starting delimiter and ending delimiter must all
+appear on the same line of source code.
 
 =head1 BUGS
+
+The hash symbol (#) can not be used as a quote delimiter. Sad face.
 
 Please report any bugs to
 L<http://rt.cpan.org/Dist/Display.html?Queue=PerlX-QuoteOperator-Inescapable>.
