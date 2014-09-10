@@ -7,7 +7,7 @@ no warnings qw( void once uninitialized );
 
 BEGIN {
 	$PerlX::QuoteOperator::Inescapable::AUTHORITY = 'cpan:TOBYINK';
-	$PerlX::QuoteOperator::Inescapable::VERSION   = '0.001';
+	$PerlX::QuoteOperator::Inescapable::VERSION   = '0.002';
 }
 
 use Carp qw/croak/;
